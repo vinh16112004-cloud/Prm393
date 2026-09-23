@@ -13,11 +13,6 @@ class Bodywidget extends StatelessWidget {
   ];
   @override
   Widget build(BuildContext context) {
-    return ListView(
-      children: [
-        for(int i= 0; i < products.length;i++)
-        Productwidget(product: products[i])
-      ],
-    );
+    return IconButton(onPressed: ChangeLike, icon: Icon(x==2?Icons.star))
   }
 }
